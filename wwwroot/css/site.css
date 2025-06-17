@@ -1,0 +1,155 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.main-header {
+    background: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0078D4;
+    float: left;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.hero {
+    background: linear-gradient(120deg, #0078D4, #00A1E0);
+    color: white;
+    padding: 6rem 1rem;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.btn-filled {
+    background: white;
+    color: #0078D4;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-filled:hover {
+    background: #e2e6ea;
+}
+
+.btn-outline {
+    border: 2px solid #0078D4;
+    color: #0078D4;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    background: transparent;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+.btn-outline:hover {
+    background: #0078D4;
+    color: white;
+}
+
+.inline-form {
+    display: inline;
+}
+
+
+.bg-gradient-primary {
+    background: linear-gradient(135deg, #0078D4, #00A1E0);
+    color: white;
+}
+
+.hero h1, .hero p {
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+.features i {
+    transition: transform 0.2s ease;
+}
+
+.features i:hover {
+    transform: scale(1.1);
+}
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+.comment-form {
+    max-width: 100%;
+    margin: 0; /* маха центрирането */
+}
+
+.table td, .table th {
+    vertical-align: middle;
+}
+
+form.d-inline {
+    display: inline;
+}

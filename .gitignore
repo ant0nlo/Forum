@@ -1,0 +1,71 @@
+# .NET build artifacts
+bin/
+obj/
+out/
+**/bin/
+**/obj/
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code
+.vscode/
+.history/
+
+# Rider
+.idea/
+
+# User-specific files
+*.swp
+*.tmp
+*.bak
+*.ncb
+*.log
+*.vspscc
+*.vssscc
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Application config
+appsettings.Development.json
+
+# IIS, Azure
+.vs/
+*.dbmdl
+
+# Entity Framework
+Migrations/
+
+# Logs
+*.log
+
+# ML.NET Model Output
+# (Махни този ред, ако искаш да качваш SentimentModel.zip в GitHub)
+# SentimentModel.zip
+
+# Docker/Container artifacts
+docker-compose.*
+*.env
+
+# Python/Jupyter Notebook artifacts
+__pycache__/
+.ipynb_checkpoints/
+
+# npm
+node_modules/
+
+# Test results
+TestResults/
+*.coverage
+
+# SQL tools
+*.mdf
+*.ldf
+
+# JetBrains
+.idea/
+*.sln.iml

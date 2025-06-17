@@ -1,0 +1,23 @@
+@model ForumSentiment.ViewModels.PostViewModels.CreatePostViewModel
+
+<div class="container py-5">
+    <h2 class="mb-4 text-primary text-center"><i class="fas fa-pen"></i> Create New Post</h2>
+
+    <form asp-action="Create" method="post" class="bg-white p-4 shadow-sm rounded">
+        <div class="mb-3">
+            <label asp-for="Title" class="form-label">Title</label>
+            <input asp-for="Title" class="form-control" placeholder="Enter title..." />
+            <span asp-validation-for="Title" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Content" class="form-label">Content</label>
+            <textarea asp-for="Content" class="form-control" rows="6" placeholder="Write your post..."></textarea>
+            <span asp-validation-for="Content" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">
+            <i class="fas fa-paper-plane"></i> Submit
+        </button>
+    </form>
+</div>

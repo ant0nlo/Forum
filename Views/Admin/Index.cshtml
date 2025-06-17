@@ -1,0 +1,75 @@
+@model IEnumerable<ForumSentiment.ViewModels.UserAdminViewModel>
+
+@{
+    ViewData["Title"] = "Admin Panel";
+}
+
+<div class="container py-5">
+    <h2 class="mb-4 text-primary"><i class="fas fa-users-cog"></i> User Management</h2>
+
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover align-middle">
+            <thead class="table-light">
+                <tr>
+                    <th>Email</th>
+                    <th>Roles</th>
+                    <th>Status</th>
+                    <th>Toggle Status</th>
+                    <th>Manage Roles</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var u in Model)
+                {
+                    <tr>
+                        <td>@u.Email</td>
+                        <td>@string.Join(", ", u.Roles)</td>
+                        <td>
+                            @if (u.IsActive)
+                            {
+                                <span class="badge bg-success">Active</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-secondary">Inactive</span>
+                            }
+                        </td>
+                        <td>
+                            <form method="post" asp-action="ToggleActive">
+                                <input type="hidden" name="userId" value="@u.Id" />
+                                <button type="submit" class="btn btn-outline-warning btn-sm">
+                                    Toggle
+                                </button>
+                            </form>
+                        </td>
+                        <td>
+                            @foreach (var role in new[] { "Admin", "Moderator" })
+                            {
+                                if (!u.Roles.Contains(role))
+                                {
+                                    <form method="post" asp-action="AddRole" class="d-inline">
+                                        <input type="hidden" name="userId" value="@u.Id" />
+                                        <input type="hidden" name="role" value="@role" />
+                                        <button type="submit" class="btn btn-outline-primary btn-sm me-1">
+                                            Make @role
+                                        </button>
+                                    </form>
+                                }
+                                else
+                                {
+                                    <form method="post" asp-action="RemoveRole" class="d-inline">
+                                        <input type="hidden" name="userId" value="@u.Id" />
+                                        <input type="hidden" name="role" value="@role" />
+                                        <button type="submit" class="btn btn-outline-danger btn-sm me-1">
+                                            Remove @role
+                                        </button>
+                                    </form>
+                                }
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
