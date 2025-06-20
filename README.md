@@ -107,3 +107,16 @@ This project implements a web application that **automates and improves the proc
    ```bash
    git clone https://github.com/ant0nlo/ForumSentiment.git
    cd ForumSentiment
+
+2. **Start the SQL Server in Docker:**  
+   ```bash
+   docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=YourStrong@Passw0rd"
+   -p 1433:1433 --name forumsentimentdb -d mcr.microsoft.com/mssql/server:2022-latest
+
+3. **Apply database migrations:**  
+   ```bash
+   dotnet ef database update
+
+4. **Run the application:**  
+   ```bash
+   dotnet run
