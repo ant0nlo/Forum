@@ -51,6 +51,7 @@ This project implements a web application that **automates and improves the proc
 
 **ER Diagram:**  
 *(see `er-diagram.png`)*
+![ER Diagram](diagram.png)
 
 ---
 
