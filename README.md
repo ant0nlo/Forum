@@ -7,6 +7,7 @@ A forum platform with **automatic moderation** of offensive comments using ML.NE
 This project implements a web application that **automates and improves the process of moderating forum content** by integrating modern machine learning (ML.NET) and a clean, responsive interface. The main goal is to automatically detect and flag offensive comments, provide a review system for moderators, and offer a robust admin panel for user and role management.
 
 ![ARCH Diagram](images/architecture_diagram.png)
+
 ![HOME](images/home.png)
 ---
 
