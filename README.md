@@ -36,7 +36,7 @@ This project implements a web application that **automates and improves the proc
 - **Frontend:** Razor Views, Bootstrap 5, CSS
 - **Database:** Microsoft SQL Server 2022 (runs in a Docker container)
 - **Authentication:** ASP.NET Identity (roles: User, Moderator, Admin)
-- **Machine Learning:** ML.NET 2.0, custom sentiment analysis model ([`SdcaLogisticRegression`](https://www.jmlr.org/papers/volume14/shalev-shwartz13a/shalev-shwartz13a.pdf))
+- **Machine Learning:** ML.NET 2.0, custom sentiment analysis model (`SdcaLogisticRegression`)
 - **Other:** Entity Framework Core
 
 ---
