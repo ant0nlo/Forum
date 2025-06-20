@@ -50,8 +50,7 @@ This project implements a web application that **automates and improves the proc
 - `Comments`: Comments on posts (content, author, flag for offensiveness, approval status).
 
 **ER Diagram:**  
-*(see `er-diagram.png`)*
-![ER Diagram](diagram.png)
+![ER Diagram](er-diagram.png)
 
 ---
 
