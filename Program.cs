@@ -8,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
 
-// ЯСНО зададен connection string към ForumSentimentDB
+// connection string към ForumSentimentDB
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer("Server=localhost,1433;Database=ForumSentimentDB;User Id=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=True;"));
 

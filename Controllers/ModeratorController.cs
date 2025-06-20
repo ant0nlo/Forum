@@ -20,12 +20,12 @@ namespace ForumSentiment.Controllers
         {
             var flaggedComments = await _context.Comments
                 .Where(c => c.IsFlagged && !c.IsApproved)
-                .Include(c => c.User) // важно: за да достъпиш имейла/името на автора
+                .Include(c => c.User) 
                 .Select(c => new CommentViewModel
                 {
                     Id = c.Id,
                     Content = c.Content,
-                    UserName = c.User.Email // или c.User.UserName, ако имаш такова поле
+                    UserName = c.User.Email
                 })
                 .ToListAsync();
 

@@ -27,6 +27,6 @@ namespace ForumSentiment.Services
     public class CommentPrediction
 {
     public bool PredictedLabel { get; set; }
-    public float Score { get; set; } // беше float[] -> трябва да е float
+    public float Score { get; set; }
 }
 }

@@ -5,7 +5,7 @@ using ForumSentiment.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using System.Security.Claims; // нужно за FindFirstValue
+using System.Security.Claims; 
 
 namespace ForumSentiment.Controllers
 {
@@ -24,7 +24,7 @@ namespace ForumSentiment.Controllers
         }
 
         [HttpGet]
-        [AllowAnonymous] // ако искаш формата да е достъпна и без логин
+        [AllowAnonymous] //формата да е достъпна и без логин
         public IActionResult CreateComment()
         {
             return View();

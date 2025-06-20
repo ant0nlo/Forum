@@ -10,6 +10,6 @@ namespace ForumSentiment.ViewModels
         public bool IsFlagged { get; set; }
         public bool IsApproved { get; set; }
         public string? ApprovedByModeratorEmail { get; set; }
-        public string Text => Content; // ако Text се ползва в някой View
+        public string Text => Content; 
     }
 }
