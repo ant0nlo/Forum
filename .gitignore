@@ -44,7 +44,6 @@ Migrations/
 *.log
 
 # Docker/Container artifacts
-docker-compose.*
 *.env
 
 # Python/Jupyter Notebook artifacts

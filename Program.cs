@@ -10,7 +10,7 @@ builder.Services.AddControllersWithViews();
 
 // connection string към ForumSentimentDB
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer("Server=localhost,1433;Database=ForumSentimentDB;User Id=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=True;"));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>()
